@@ -43,7 +43,8 @@ df.shape
 sns.set(rc = {'figure.figsize':(25,16)})
 sns.heatmap(df.corr(), annot=True, cmap= 'YlGnBu')
 
-df = df.drop(["texture_mean",
+df = df.drop(["id",
+              "texture_mean",
               "smoothness_mean",
               "compactness_mean",
               "symmetry_mean",
